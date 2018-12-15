@@ -1,0 +1,53 @@
+.about-area {
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 50px solid #f6f6f6;
+    border-right: 50vw solid transparent
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 50px solid #f6f6f6;
+    border-left: 50vw solid transparent
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.skills-bar {
+
+  .skills-progress {
+    height: 10px;
+    width: 90%;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      -webkit-transition: all 1s linear;
+      transition: all 1s linear;
+
+      &:after {
+        content: attr(data-value);
+        position: absolute;
+        right: -15px;
+        top: -25px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

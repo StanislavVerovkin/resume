@@ -1,0 +1,118 @@
+/* special media for buttons */
+@media (max-width: 350px) {
+  .btn-1 {
+    padding: 10px 18px;
+  }
+
+  .btn-2 {
+    padding: 10px 18px;
+  }
+
+  .btn-3 {
+    padding: 9px 17px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+  .mb-50px-xs {
+    margin-bottom: 50px;
+  }
+
+  .welcome-area.creative-1 {
+    -webkit-clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
+    clip-path: polygon(100% 0, 100% 98%, 75% 93%, 50% 98%, 25% 93%, 0 98%, 0 0);
+  }
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media (max-width: 767px) {
+
+  .mb-50px-sm {
+    margin-bottom: 50px;
+  }
+
+  .title-h {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .box-padding {
+    padding: 100px 30px;
+  }
+
+  .title-p {
+    margin: 0 10% 70px 10%;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 43px;
+  }
+
+  h2 {
+    font-size: 33px;
+    line-height: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  h6 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar .bars {
+    display: block;
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    color: #333;
+    text-align: center;
+  }
+
+  .image-back-right,
+  .image-back-left {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 400px;
+  }
+
+  .testimonials .single-review p {
+    line-height: 1.5em;
+    margin: 0 10%;
+  }
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media (max-width: 991px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)  */
+@media (max-width: 1200px) {
+}

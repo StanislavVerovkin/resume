@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+@import "responsive";
+@import "settings";
+
+//@import "blocks/loader";
+@import "blocks/navbar";
+@import "blocks/welcome";
+@import "blocks/about";
+
+
+/*----------------------------------------------------
+					07-experience-area
+----------------------------------------------------*/
+.experience-area:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 50px solid #fff;
+  border-right: 70vw solid transparent
+}
+
+.experience-area:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 50px solid #fff;
+  border-left: 30vw solid transparent
+}
+
+.experience-area .exper-box .shape {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 8px;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.experience-area .exper-box:hover .shape {
+  height: 100%;
+}
+
+
+
+/*----------------------------------------------------
+					12-work-area
+----------------------------------------------------*/
+.work-area .filtering span {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 9px 22px;
+}
+
+.work-area .filtering .active {
+  background-color: #2f3dff;
+  color: #fff;
+}
+
+.work-area .work-image img {
+  width: 100%;
+}
+
+.work-area .overlay-bg {
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0;
+  -webkit-transform: translateX(-5px) translateY(5px);
+  transform: translateX(-5px) translateY(5px);
+}
+
+.work-area .work-image:hover .overlay-bg {
+  opacity: 1;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+}
+
+.work-area .overlay-bg .fa-long-arrow-right {
+  top: 10px;
+  right: 10px;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border: 1px solid #ccc;
+}
+
+.work-area .overlay-bg .fa-long-arrow-right:hover {
+  border-color: #2f3dff;
+}
+
+.work-area .work-image p {
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
+  -webkit-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.work-area .work-image h5 {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  -webkit-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.work-area .work-image:hover h5,
+.work-area .work-image:hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
+/*----------------------------------------------------
+					20-scroll-top-btn
+----------------------------------------------------*/
+.scroll-top-btn .fa {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  z-index: 9999;
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  display: none
+}
