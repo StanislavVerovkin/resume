@@ -1,0 +1,30 @@
+.experience-area:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 50px solid #fff;
+  border-right: 70vw solid transparent
+}
+
+.experience-area:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 50px solid #fff;
+  border-left: 30vw solid transparent
+}
+
+.experience-area .exper-box .shape {
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 8px;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.experience-area .exper-box:hover .shape {
+  height: 100%;
+}
